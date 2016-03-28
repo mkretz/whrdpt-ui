@@ -8,7 +8,7 @@ var webpack = require( 'webpack' );
 // define Webpack configuration object to be exported
 var config = {
     context: __dirname + '/app',
-    entry: './app.ts',
+    entry: './bootstrap.ts',
     output: {
         path: __dirname + '/dist',
         filename: 'bundle.js'
@@ -50,7 +50,7 @@ var config = {
     },
     plugins: [
         new htmlWebpackPlugin( {
-            template: '../public/index.html',
+            template: '../app/index.html',
             inject: 'body'
         } ),
         new webpack.ProvidePlugin({

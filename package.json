@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "UI for an app which helps you remember where you put stuff and lets you share this information with others.",
   "scripts": {
+    "start": "webpack-dev-server -d",
+    "build:dev": "webpack -d --display-modules --progress",
+    "build:prd": "webpack -p --display-modules --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +23,7 @@
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.14.0",
+    "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
     "ts-loader": "^0.8.1",
     "tslint": "^3.6.0",
