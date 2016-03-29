@@ -1,3 +1,3 @@
-export * from './directives';
-export * from './pipes';
-export * from './providers';
+export * from './directives.ts';
+export * from './pipes.ts';
+export * from './providers.ts';

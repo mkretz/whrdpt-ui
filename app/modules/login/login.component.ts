@@ -11,7 +11,7 @@ import {Http} from 'angular2/http';
 })
 export class Login {
     // TypeScript public modifiers
-    constructor(public http: Http) {
+    constructor() {
     }
 
     ngOnInit() {

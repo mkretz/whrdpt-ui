@@ -24,7 +24,7 @@ var config = {
             {
                 test: /\.ts$/,
                 exclude: [/node_modules/, /typings/],
-                loader: 'ts'
+                loader: 'awesome-typescript-loader'
             },
             {
                 test: /\.css$/,

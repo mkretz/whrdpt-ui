@@ -1,8 +1,10 @@
 import 'reflect-metadata';
 
+import 'zone.js';
+
 import {bootstrap} from 'angular2/platform/browser';
-import {DIRECTIVES,PIPES,PROVIDERS} from './core/platform/browser/index';
-import {App} from './app';
+import {PROVIDERS, DIRECTIVES, PIPES} from './core/platform/browser/index.ts';
+import {App} from './app.ts';
 
 export function main() {
 

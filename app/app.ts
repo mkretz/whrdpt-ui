@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, Router} from 'angular2/router';
-import {Login} from './modules/login';
+import {Login} from './modules/login/index.ts';
 
 /*
  * App Component
@@ -32,7 +32,7 @@ import {Login} from './modules/login';
 ])
 export class App {
     url: string = 'https://twitter.com/AngularClass';
-    constructor(public title: Title) {}
+    constructor() {}
 }
 /*
  * Please review the https://github.com/AngularClass/angular2-examples/ repo for
