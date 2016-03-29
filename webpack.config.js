@@ -38,7 +38,9 @@ var config = {
             {
                 test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
                 loader: 'url?limit=100000'
-            }
+            },
+            { test: /jquery\.min\.js$/, loader: 'expose?$' },
+            { test: /jquery\.min\.js$/, loader: 'expose?jQuery' },
         ],
         preLoaders: [
             {
