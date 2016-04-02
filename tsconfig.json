@@ -14,7 +14,7 @@
   "filesGlob": [
     "./app/**/*.ts",
     "!./node_modules/**/*.ts",
-    "src/custom-typings.d.ts",
+    "./custom-typings.d.ts",
     "typings/browser.d.ts"
   ],
   "awesomeTypescriptLoaderOptions": {

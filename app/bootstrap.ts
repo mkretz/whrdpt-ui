@@ -1,5 +1,6 @@
 import 'reflect-metadata';
-import 'zone.js';
+import 'zone.js/dist/zone';
+import 'zone.js/dist/long-stack-trace-zone';
 import 'jquery/dist/jquery.min.js';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
