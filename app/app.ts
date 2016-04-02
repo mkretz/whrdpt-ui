@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, Inject} from 'angular2/core';
 import {RouteConfig, Router} from 'angular2/router';
 import {Login} from './modules/login/index.ts';
 
@@ -32,7 +32,9 @@ import {Login} from './modules/login/index.ts';
 ])
 export class App {
     url: string = 'https://twitter.com/AngularClass';
-    constructor() {}
+    constructor(@Inject('config') config) {
+        console.log(config);
+    }
 }
 /*
  * Please review the https://github.com/AngularClass/angular2-examples/ repo for

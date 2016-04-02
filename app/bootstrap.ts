@@ -6,16 +6,18 @@ import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 
 
+import {customBoostrap} from './core/config/customBootstrap.ts';
+import {ConfigService} from './core/config/config.service.ts';
 import {bootstrap} from 'angular2/platform/browser';
 import {PROVIDERS, DIRECTIVES, PIPES} from './core/platform/browser/index.ts';
 import {App} from './app.ts';
 
 export function main() {
-
-    return bootstrap(App, [
+    return customBoostrap(App, [
         ...PROVIDERS,
         ...DIRECTIVES,
-        ...PIPES
+        ...PIPES,
+        ConfigService
     ])
         .catch(err => console.error(err));
 
