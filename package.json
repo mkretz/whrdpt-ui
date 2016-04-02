@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "UI for an app which helps you remember where you put stuff and lets you share this information with others.",
   "scripts": {
-    "start": "webpack-dev-server -d",
+    "start:local": "http-server assets/config/local -p 8888 -c-1 -s & webpack-dev-server -d",
+    "start:scs-dev": "http-server assets/config/scs-dev -p 8888 -c-1 -s & webpack-dev-server -d",
     "build:dev": "webpack -d --display-modules --progress",
     "build:prd": "webpack -p --display-modules --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +26,7 @@
     "expose-loader": "^0.7.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.15.0",
+    "http-server": "^0.9.0",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
     "tslint": "^3.6.0",
