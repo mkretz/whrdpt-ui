@@ -20,7 +20,7 @@ export const BROWSER_APP_PROVIDERS: Array<any /*Type | Provider | any[]*/> = CON
 import {HTTP_PROVIDERS} from 'angular2/http';
 import {ConfigService} from './config.service.ts';
 
-export function customBoostrap(appComponentType, customProviders) {
+export function customBootstrap(appComponentType, customProviders) {
     reflector.reflectionCapabilities = new ReflectionCapabilities();
     let appProviders =
         isPresent(customProviders) ? [BROWSER_APP_PROVIDERS, customProviders] : BROWSER_APP_PROVIDERS;

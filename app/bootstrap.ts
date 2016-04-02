@@ -6,14 +6,14 @@ import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 
 
-import {customBoostrap} from './core/config/customBootstrap.ts';
+import {customBootstrap} from './core/config/customBootstrap.ts';
 import {ConfigService} from './core/config/config.service.ts';
 import {bootstrap} from 'angular2/platform/browser';
 import {PROVIDERS, DIRECTIVES, PIPES} from './core/platform/browser/index.ts';
 import {App} from './app.ts';
 
 export function main() {
-    return customBoostrap(App, [
+    return customBootstrap(App, [
         ...PROVIDERS,
         ...DIRECTIVES,
         ...PIPES,
